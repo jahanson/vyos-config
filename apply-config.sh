@@ -83,6 +83,7 @@ else
       run delete container image "${image_id}"
     fi
   done
+  sudo find "/config" -name "overlay*" -type d -prune -exec rm -rf "{}" \;
 fi
 
 exit
