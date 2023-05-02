@@ -6,6 +6,9 @@ set system static-host-mapping host-name gateway.jahanson.tech alias ipv4.hsn.de
 # Unifi controller
 set system static-host-mapping host-name unifi inet 10.5.0.10
 
+# 1Password Connect
+set system static-host-mapping host-name onepassword-connect.hsn.dev inet 10.5.0.5
+
 # NAS
 set system static-host-mapping host-name elessar.jahanson.tech inet 10.1.1.11
 set system static-host-mapping host-name elessar.jahanson.tech alias nas.jahanson.tech
