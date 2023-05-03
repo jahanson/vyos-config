@@ -24,3 +24,14 @@ on:
       - ".github/renovate/**.json5"
       - ".github/workflows/schedule-renovate.yaml"
 
+jobs:
+  renovate:
+    name: Renovate
+    uses: renovatebot/github-action@v36.0.0
+    with:
+      configurationFile: ".github/renovate.json5"
+      dryRun: ${{ inputs.dryRun || 'false' }}
+      renovateLogLevel: ${{ inputs.logLevel || 'debug' }}
+    # secrets:
+    #   app_id: ${{ secrets.BJWS_APP_ID }}
+    #   app_private_key: ${{ secrets.BJWS_APP_PRIVATE_KEY }}
