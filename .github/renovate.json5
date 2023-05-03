@@ -6,7 +6,7 @@
   ],
   "platform": "github",
   "username": "jahanson-bot[bot]",
-  "gitAuthor": "jahanson-bot <132467671+jahanson-bot[bot]@users.noreply.github.com>"
+  "gitAuthor": "jahanson-bot <132467671+jahanson-bot[bot]@users.noreply.github.com>",
   "repositories": ["jahanson/vyos-config"],
   "regexManagers": [
     {
