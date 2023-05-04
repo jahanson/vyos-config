@@ -143,7 +143,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping glamdring ip-address '10.1.1.32'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping glamdring mac-address 'd4:5d:64:91:b2:42'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax ip-address '10.1.1.33'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:73'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:74'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping lembas ip-address '10.1.1.34'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping lembas mac-address 'c8:1f:66:10:51:d9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar ip-address '10.1.1.11'
@@ -152,8 +152,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting mac-address 'a8:a1:59:4a:d1:b3'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping homeassistant ip-address '10.1.1.13'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping homeassistant mac-address '80:e8:2c:db:68:a2'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping jellydocks ip-address '10.1.1.14'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping jellydocks mac-address 'ea:87:86:9c:73:43'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud ip-address '10.1.1.51'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address 'c8:1f:66:10:4d:b9'

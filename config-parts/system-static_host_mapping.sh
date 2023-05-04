@@ -22,7 +22,6 @@ set system static-host-mapping host-name homeassistant.jahanson.tech inet 10.1.1
 set system static-host-mapping host-name gandalf.jahanson.tech inet 10.1.1.31
 set system static-host-mapping host-name glamdring.jahanson.tech inet 10.1.1.32
 set system static-host-mapping host-name shadowfax.jahanson.tech inet 10.1.1.33
-set system static-host-mapping host-name lembas.jahanson.tech inet 10.1.1.34
 
 # Kubernetes cluster VIP
 set system static-host-mapping host-name cluster-0.jahanson.tech inet 10.5.0.2
