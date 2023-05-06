@@ -1,0 +1,41 @@
+; Make sure to update the epoch time in the SOA records so coreDNS picks up the changes automatically
+; https://www.epochconverter.com/
+
+; SOA Records
+$TTL 3600
+$ORIGIN jahanson.tech.
+@ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
+  1683235219         ; serial number (epoch timestamp)
+  7200               ; refresh period
+  3600               ; retry period
+  1209600            ; expire time
+  3600               ; minimum ttl
+)
+
+; NS Records
+@                          IN  NS gateway.jahanson.tech.
+
+; LAN
+gateway                    IN  A  10.1.0.1
+
+; Servers
+elessar                    IN  A  10.1.1.11
+gandalf                    IN  A  10.1.1.31
+glamdring                  IN  A  10.1.1.32
+shadowfax                  IN  A  10.1.1.33
+nextcloud                  IN  A  10.1.1.51
+frodo                      IN  A  10.1.1.52
+
+; IOT
+livingroom-vacuum          IN  A  10.1.3.18
+
+; Video
+driveway-camera        l   IN  A  10.1.4.12
+
+; Services
+cluster-0                  IN  A  10.5.0.2
+
+; CNAME records
+nas                        IN  CNAME  elessar.jahanson.tech.
+pikvm                      IN  CNAME  frodo.jahanson.tech.
+s3                         IN  CNAME  gateway.jahanson.tech.
