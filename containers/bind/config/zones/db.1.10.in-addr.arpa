@@ -5,7 +5,7 @@
 $TTL 3600
 $ORIGIN 1.10.in-addr.arpa.
 @ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
-  1683235219         ; serial number (epoch timestamp)
+  1683473430         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -23,6 +23,7 @@ $ORIGIN in-addr.arpa.
 
 ; Servers
 11.1.1.10                  IN  PTR  elessar.jahanson.tech.
+21.1.1.10                  IN  PTR  sting.jahanson.tech.
 31.1.1.10                  IN  PTR  gandalf.jahanson.tech.
 32.1.1.10                  IN  PTR  glamdring.jahanson.tech.
 33.1.1.10                  IN  PTR  shadowfax.jahanson.tech.
