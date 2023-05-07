@@ -31,7 +31,7 @@ frodo                      IN  A  10.1.1.52
 livingroom-vacuum          IN  A  10.1.3.18
 
 ; Video
-driveway-camera        l   IN  A  10.1.4.12
+driveway-camera            IN  A  10.1.4.12
 
 ; Services
 cluster-0                  IN  A  10.5.0.2
