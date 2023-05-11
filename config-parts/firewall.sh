@@ -53,7 +53,7 @@ set firewall group address-group k8s_mqtt address '10.45.0.10'
 
 set firewall group address-group k8s_nodes address '10.1.1.31'
 set firewall group address-group k8s_nodes address '10.1.1.32'
-set firewall group address-group k8s_nodes address '10.1.1.34'
+set firewall group address-group k8s_nodes address '10.1.1.33'
 
 
 set firewall group address-group k8s_plex address '10.45.0.20'
