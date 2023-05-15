@@ -141,8 +141,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping glamdring mac-address 'd4:5d:64:91:b2:42'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax ip-address '10.1.1.33'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:74'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping lembas ip-address '10.1.1.34'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping lembas mac-address 'c8:1f:66:10:51:d9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar mac-address '00:11:32:87:f6:1d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting ip-address '10.1.1.12'

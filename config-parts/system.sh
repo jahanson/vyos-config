@@ -5,6 +5,8 @@ set system host-name 'gateway'
 
 set system ipv6 disable-forwarding
 
+set system login user vyos authentication public-keys ios key 'AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPHFQ3hDjjrKsecn3jmSWYlRXy4IJCrepgU1HaIV5VcmB3mUFmIZ/pCZnPmIG/Gbuqf1PP2FQDmHMX5t0hTYG9A='
+set system login user vyos authentication public-keys ios type 'ecdsa-sha2-nistp256'
 set system login user vyos authentication public-keys personal key 'AAAAC3NzaC1lZDI1NTE5AAAAIBsUe5YF5z8vGcEYtQX7AAiw2rJygGf2l7xxr8nZZa7w'
 set system login user vyos authentication public-keys personal type 'ssh-ed25519'
 
