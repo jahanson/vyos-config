@@ -459,13 +459,8 @@ set firewall name servers-video rule 1 description 'Rule: accept_icmp'
 set firewall name servers-video rule 1 protocol 'icmp'
 set firewall name servers-video rule 2 action 'accept'
 set firewall name servers-video rule 2 description 'Rule: accept_k8s_nodes'
-set firewall name servers-video rule 2 protocol 'tcp'
+set firewall name servers-video rule 2 protocol 'tcp_udp'
 set firewall name servers-video rule 2 source group address-group 'k8s_nodes'
-## From jellydocks --> Video
-set firewall name servers-video rule 3 action 'accept'
-set firewall name servers-video rule 3 description 'Rule: accept_jellydocks'
-set firewall name servers-video rule 3 protocol 'tcp'
-set firewall name servers-video rule 3 source address 10.1.1.14
 
 # From SERVERS to WAN
 set firewall name servers-wan default-action 'accept'
@@ -653,6 +648,11 @@ set firewall name video-local rule 2 source port '67,68'
 set firewall name video-servers default-action 'drop'
 set firewall name video-servers description 'From VIDEO to SERVERS'
 set firewall name video-servers enable-default-log
+set firewall name video-servers rule 2 action 'accept'
+set firewall name video-servers rule 2 description 'Rule: accept_k8s_nodes'
+set firewall name video-servers rule 2 protocol 'udp'
+set firewall name video-servers rule 2 destination group address-group 'k8s_nodes'
+set firewall name video-servers rule 2 source port '6987-6989'
 
 # From VIDEO to SERVICES
 set firewall name video-containers default-action 'accept'
