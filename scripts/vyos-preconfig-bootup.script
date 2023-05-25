@@ -5,7 +5,7 @@
 
 # TODO: Remove if issues don't come back, turn back on if they do
 # Clean dangling container network files
-# rm /var/lib/cni/networks/services/10.5.*
+# rm /var/lib/cni/containers/services/10.5.*
 
 # Fix for containers requiring a custom user/group id
 # and Vyos not preserving file perms on upgrade
@@ -15,6 +15,6 @@ mkdir -p /tmp/bind/cache
 chown -R 104 /tmp/bind/cache
 
 # Mount USB Backup Drive
-backupdest=/media/usb-backup
-mkdir -p "$backupdest"
-mount -t vfat -o rw,uid=vyos,gid=vyattacfg /dev/disk/by-id/usb-Samsung_Flash_Drive_FIT_0376621010005300-0:0-part1 "$backupdest"
+# backupdest=/media/usb-backup
+# mkdir -p "$backupdest"
+# mount -t vfat -o rw,uid=vyos,gid=vyattacfg /dev/disk/by-id/usb-Samsung_Flash_Drive_FIT_0376621010005300-0:0-part1 "$backupdest"
