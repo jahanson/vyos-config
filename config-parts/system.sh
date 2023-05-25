@@ -16,7 +16,7 @@ set system sysctl parameter kernel.pty.max value '24000'
 
 # Sent to vector syslog server
 set system syslog host 10.45.0.2 facility kern level 'warning'
-set system syslog host 10.45.0.2 facility kern protocol 'tcp'
+set system syslog host 10.45.0.2 protocol 'tcp'
 set system syslog host 10.45.0.2 port '6001'
 
 # Custom backup
