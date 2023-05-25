@@ -33,7 +33,7 @@ livingroom-vacuum          IN  A  10.1.3.18
 ; Video
 driveway-camera            IN  A  10.1.4.12
 
-; Services
+; Containers
 cluster-0                  IN  A  10.5.0.2
 
 ; CNAME records

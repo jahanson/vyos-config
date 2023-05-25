@@ -2,11 +2,11 @@
 
 set interfaces ethernet eth0 address 'dhcp'
 set interfaces ethernet eth0 description 'WAN'
-set interfaces ethernet eth0 hw-id 'a0:42:3f:2f:a9:68'
+set interfaces ethernet eth0 hw-id '04:42:1a:ef:35:75'
 
 set interfaces ethernet eth1 address '10.1.0.1/24'
 set interfaces ethernet eth1 description 'LAN'
-set interfaces ethernet eth1 hw-id 'a0:42:3f:2f:a9:69'
+set interfaces ethernet eth1 hw-id '04:42:1a:ef:35:74'
 set interfaces ethernet eth1 vif 10 address '10.1.1.1/24'
 set interfaces ethernet eth1 vif 10 description 'SERVERS'
 set interfaces ethernet eth1 vif 20 address '10.1.2.1/24'
