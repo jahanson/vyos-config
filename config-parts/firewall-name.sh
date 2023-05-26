@@ -590,6 +590,14 @@ set firewall name trusted-local rule 10 description 'Rule: accept_discovery_from
 set firewall name trusted-local rule 10 destination port '1900,1901,1902,57621'
 set firewall name trusted-local rule 10 protocol 'udp'
 set firewall name trusted-local rule 10 source group address-group 'sonos_controllers'
+set firewall name trusted-local rule 11 action 'accept'
+set firewall name trusted-local rule 11 description 'Rule: accept_dns_udp'
+set firewall name trusted-local rule 11 destination port '53'
+set firewall name trusted-local rule 11 protocol 'udp'
+set firewall name trusted-local rule 12 action 'accept'
+set firewall name trusted-local rule 12 description 'Rule: accept_dns_tcp'
+set firewall name trusted-local rule 12 destination port '53'
+set firewall name trusted-local rule 12 protocol 'tcp'
 
 # From TRUSTED to SERVERS
 set firewall name trusted-servers default-action 'accept'
