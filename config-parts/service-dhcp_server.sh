@@ -135,12 +135,13 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 s
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 
 # Need to add all of the macs for the servers.
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf ip-address '10.1.1.31'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf mac-address '80:61:5f:04:88:5a'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping glamdring ip-address '10.1.1.32'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping glamdring mac-address 'd4:5d:64:91:b2:42'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax ip-address '10.1.1.33'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:74'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya ip-address '10.1.1.41'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya mac-address '6e:e5:a0:e6:36:28'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya ip-address '10.1.1.42'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya mac-address 'ce:06:3f:d5:32:be'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya ip-address '10.1.1.43'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya mac-address '6a:5b:95:ec:2a:e1'
+
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar mac-address '00:11:32:87:f6:1d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting ip-address '10.1.1.12'
