@@ -130,7 +130,7 @@ set service dhcp-server shared-network-name SERVERS ping-check
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 default-router '10.1.1.1'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 domain-name 'jahanson.tech'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 lease '86400'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-server '10.1.1.1'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 
@@ -160,7 +160,7 @@ set service dhcp-server shared-network-name TRUSTED ping-check
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 default-router '10.1.2.1'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 domain-name 'jahanson.tech'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 lease '86400'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 name-server '10.1.2.1'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 start '10.1.2.200'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 stop '10.1.2.254'
 
