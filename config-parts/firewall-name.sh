@@ -236,6 +236,10 @@ set firewall name lan-local rule 3 description 'Rule: accept_dhcp'
 set firewall name lan-local rule 3 destination port '67,68'
 set firewall name lan-local rule 3 protocol 'udp'
 set firewall name lan-local rule 3 source port '67,68'
+set firewall name lan-local rule 4 action 'accept'
+set firewall name lan-local rule 4 description 'Rule: accept_node_speed_exporter'
+set firewall name lan-local rule 4 destination port '9798,9100'
+set firewall name lan-local rule 4 protocol 'tcp'
 
 # From LAN to SERVERS
 set firewall name lan-servers default-action 'drop'
