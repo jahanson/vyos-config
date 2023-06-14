@@ -51,13 +51,13 @@ set firewall group address-group k8s_jellyfin address '10.45.0.21'
 
 set firewall group address-group k8s_mqtt address '10.45.0.10'
 
-set firewall group address-group k8s_nodes address '10.1.1.31'
-set firewall group address-group k8s_nodes address '10.1.1.32'
-set firewall group address-group k8s_nodes address '10.1.1.33'
 set firewall group address-group k8s_nodes address '10.1.1.41'
 set firewall group address-group k8s_nodes address '10.1.1.42'
 set firewall group address-group k8s_nodes address '10.1.1.43'
 set firewall group address-group k8s_nodes address '10.1.1.44'
+set firewall group address-group k8s_nodes address '10.1.1.61'
+set firewall group address-group k8s_nodes address '10.1.1.62'
+set firewall group address-group k8s_nodes address '10.1.1.63'
 
 set firewall group address-group k8s_hass address '10.45.0.5'
 set firewall group address-group k8s_plex address '10.45.0.20'
