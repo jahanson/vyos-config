@@ -31,6 +31,9 @@ nahar                      IN  A  10.1.1.44
 nextcloud                  IN  A  10.1.1.51
 frodo                      IN  A  10.1.1.52
 tulkas                     IN  A  10.1.1.53
+galadriel                  IN  A  10.1.1.61
+elrond                     IN  A  10.1.1.62
+cirdan                     IN  A  10.1.1.63
 
 ; IOT
 livingroom-vacuum          IN  A  10.1.3.18
@@ -39,7 +42,7 @@ livingroom-vacuum          IN  A  10.1.3.18
 driveway-camera            IN  A  10.1.4.12
 
 ; Containers
-cluster-0                  IN  A  10.5.0.2
+morgoth                  IN  A  10.5.0.2
 
 ; CNAME records
 nas                        IN  CNAME  elessar.jahanson.tech.

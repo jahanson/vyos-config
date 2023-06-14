@@ -5,7 +5,7 @@
 $TTL 3600
 $ORIGIN 1.10.in-addr.arpa.
 @ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
-  1686507728         ; serial number (epoch timestamp)
+  1686691675         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -34,6 +34,9 @@ $ORIGIN in-addr.arpa.
 51.1.1.10                  IN  PTR  nextcloud.jahanson.tech.
 52.1.1.10                  IN  PTR  frodo.jahanson.tech.
 53.1.1.10                  IN  PTR  tulkas.jahanson.tech.
+61.1.1.10                  IN  PTR  galadriel.jahanson.tech.
+62.1.1.10                  IN  PTR  elrond.jahanson.tech.
+63.1.1.10                  IN  PTR  cirdan.jahanson.tech.
 
 ; IOT
 18.3.1.10                  IN  PTR  livingroom-vacuum.jahanson.tech.
