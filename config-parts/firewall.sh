@@ -68,6 +68,10 @@ set firewall group address-group mqtt_clients address '10.1.2.32'
 set firewall group address-group mqtt_clients address '10.1.3.18'
 set firewall group address-group mqtt_clients address '10.1.3.22'
 set firewall group address-group mqtt_clients address '10.1.3.56'
+set firewall group address-group mqtt_clients address '10.1.3.33' # SwitchBot Plug Mini 1
+set firewall group address-group mqtt_clients address '10.1.3.34' # SwitchBot Plug Mini 2
+set firewall group address-group mqtt_clients address '10.1.3.35' # SwitchBot Plug Mini 3
+set firewall group address-group mqtt_clients address '10.1.3.36' # SwitchBot Plug Mini 4
 
 set firewall group address-group hass_clients address '10.1.4.12'
 
