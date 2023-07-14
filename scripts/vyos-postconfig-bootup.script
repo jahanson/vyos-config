@@ -13,7 +13,7 @@ tee /home/vyos/.gitconfig <<END >/dev/null
   email = joe@veri.dev
   name = Joseph Hanson
 END
-#
+# Add bash aliases for home directory
 tee -a /home/vyos/.bash_aliases <<END >/dev/null
 export SOPS_AGE_KEY_FILE=/config/secrets/age.key
 export GIT_SSH_COMMAND="ssh -i /config/secrets/id_ed25519"
@@ -21,4 +21,5 @@ export VISUAL=vi
 export EDITOR=vi
 alias podman="sudo podman"
 END
-#
+# Force X550 NIC to 2.5Gbps autonegotiation. Fixes a Intel driver issue.
+ethtool -s eth0 speed 2500 duplex full autoneg on

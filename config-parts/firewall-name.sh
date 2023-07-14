@@ -240,6 +240,10 @@ set firewall name lan-local rule 4 action 'accept'
 set firewall name lan-local rule 4 description 'Rule: accept_node_speed_exporter'
 set firewall name lan-local rule 4 destination port '9798,9100'
 set firewall name lan-local rule 4 protocol 'tcp'
+set firewall name lan-local rule 5 action 'accept'
+set firewall name lan-local rule 5 description 'Rule: accept perfmon3'
+set firewall name lan-local rule 5 destination port '5201'
+set firewall name lan-local rule 5 protocol 'tcp'
 
 # From LAN to SERVERS
 set firewall name lan-servers default-action 'drop'
