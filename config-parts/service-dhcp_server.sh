@@ -122,7 +122,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w2 ip-address '10.1.1.33'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w2 mac-address '98:90:96:B2:03:96'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w3 ip-address '10.1.1.33'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w3 mac-address '98:90:96:BD:A0:EA'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w3 mac-address '98:90:96:B0:AD:EA'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
