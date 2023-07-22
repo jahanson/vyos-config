@@ -100,7 +100,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping homeassistant mac-address '80:e8:2c:db:68:a2'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud ip-address '10.1.1.51'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address 'c8:1f:66:10:4d:b9'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address '96:C6:B7:2A:5C:2A'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping frodo ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping frodo mac-address 'dc:a6:32:09:76:4c'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas ip-address '10.1.1.53'
