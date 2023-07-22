@@ -111,7 +111,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond ip-address '10.1.1.62'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond mac-address 'C8:1F:66:10:51:D9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan ip-address '10.1.1.63'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan mac-address '98:90:96:A2:04:B1'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan mac-address '98:90:96:b9:17:e3'
 
 # set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 ip-address '10.1.1.31'
 # set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 mac-address '34:17:EB:D9:AB:D2'
