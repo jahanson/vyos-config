@@ -107,14 +107,14 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas mac-address '26:82:2F:16:7A:36'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping galadriel ip-address '10.1.1.61'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping galadriel mac-address '96:C6:24:13:E8:2F'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping galadriel mac-address '34:17:EB:D9:AB:D2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond ip-address '10.1.1.62'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond mac-address 'C8:1F:66:10:51:D9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan ip-address '10.1.1.63'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan mac-address '9A:37:F2:C6:C3:DD'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 ip-address '10.1.1.31'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 mac-address '34:17:EB:D9:AB:D2'
+# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 ip-address '10.1.1.31'
+# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 mac-address '34:17:EB:D9:AB:D2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m2 ip-address '10.1.1.32'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m2 mac-address '98:90:96:A2:04:B1'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w1 ip-address '10.1.1.33'
