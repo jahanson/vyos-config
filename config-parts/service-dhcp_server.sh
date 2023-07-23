@@ -96,8 +96,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar mac-address '00:11:32:87:f6:1d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting ip-address '10.1.1.12'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting mac-address 'a8:a1:59:4a:d1:b3'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping homeassistant ip-address '10.1.1.13'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping homeassistant mac-address '80:e8:2c:db:68:a2'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud ip-address '10.1.1.51'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address '96:C6:B7:2A:5C:2A'
