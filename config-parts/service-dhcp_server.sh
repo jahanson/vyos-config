@@ -90,7 +90,11 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya ip-address '10.1.1.43'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya mac-address '80:e8:2c:db:68:a2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nahar ip-address '10.1.1.44'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nahar mac-address 'f2:09:a3:b9:c8:f8'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nahar mac-address '98:90:96:e0:fa:f0'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thror ip-address '10.1.1.45'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thror mac-address '64:00:6A:63:94:AE'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain ip-address '10.1.1.46'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain mac-address '98:90:96:B0:AD:EA'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar mac-address '00:11:32:87:f6:1d'
@@ -110,17 +114,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond mac-address '98:90:96:b9:17:e3'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan ip-address '10.1.1.63'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan mac-address '98:90:96:A2:04:B1'
-
-# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 ip-address '10.1.1.31'
-# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m1 mac-address '34:17:EB:D9:AB:D2'
-# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m2 ip-address '10.1.1.32'
-# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping m2 mac-address '98:90:96:A2:04:B1'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w1 ip-address '10.1.1.33'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w1 mac-address '64:00:6A:63:94:AE'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w2 ip-address '10.1.1.33'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w2 mac-address '98:90:96:B2:03:96'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w3 ip-address '10.1.1.33'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping w3 mac-address '98:90:96:B0:AD:EA'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative

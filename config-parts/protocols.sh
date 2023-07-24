@@ -13,6 +13,12 @@ set protocols bgp neighbor 10.1.1.43 remote-as '64512'
 set protocols bgp neighbor 10.1.1.44 address-family ipv4-unicast
 set protocols bgp neighbor 10.1.1.44 description 'nahar'
 set protocols bgp neighbor 10.1.1.44 remote-as '64512'
+set protocols bgp neighbor 10.1.1.45 address-family ipv4-unicast
+set protocols bgp neighbor 10.1.1.45 description 'thror'
+set protocols bgp neighbor 10.1.1.45 remote-as '64512'
+set protocols bgp neighbor 10.1.1.46 address-family ipv4-unicast
+set protocols bgp neighbor 10.1.1.46 description 'thrain'
+set protocols bgp neighbor 10.1.1.46 remote-as '64512'
 set protocols bgp neighbor 10.1.1.61 address-family ipv4-unicast
 set protocols bgp neighbor 10.1.1.61 description 'galadriel'
 set protocols bgp neighbor 10.1.1.61 remote-as '64512'
