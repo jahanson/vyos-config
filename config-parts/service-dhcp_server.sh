@@ -5,7 +5,7 @@ set service dhcp-server shared-network-name LAN authoritative
 set service dhcp-server shared-network-name LAN ping-check
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 default-router '10.1.0.1'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 lease '86400'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 name-server '10.1.0.1'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 start '10.1.0.200'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 stop '10.1.0.254'
 
@@ -100,7 +100,7 @@ set service dhcp-server shared-network-name IOT ping-check
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 default-router '10.1.3.1'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 domain-name 'jahanson.tech'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 lease '86400'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 name-server '10.1.3.1'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 start '10.1.3.200'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 stop '10.1.3.254'
 
