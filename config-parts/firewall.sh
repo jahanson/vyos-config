@@ -78,6 +78,8 @@ set firewall group address-group sonos_players address '10.1.3.72'
 set firewall group address-group sonos_players address '10.1.3.73'
 set firewall group address-group sonos_players address '10.1.3.74'
 
+set firewall group address-group scanners address '10.1.3.55'
+
 set firewall group address-group unifi_devices address '10.1.0.11'
 set firewall group address-group unifi_devices address '10.1.0.12'
 set firewall group address-group unifi_devices address '10.1.0.13'
