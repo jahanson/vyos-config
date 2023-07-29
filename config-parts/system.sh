@@ -15,9 +15,11 @@ set system name-server '1.1.1.1'
 set system sysctl parameter kernel.pty.max value '24000'
 
 # Sent to vector syslog server
+set system syslog global facility all level info
 set system syslog host 10.45.0.2 facility kern level 'warning'
 set system syslog host 10.45.0.2 protocol 'tcp'
 set system syslog host 10.45.0.2 port '6001'
+set system syslog host 10.45.0.2 format 'octet-counted'
 
 # Custom backup
 set system task-scheduler task backup-config crontab-spec '30 0 * * *'

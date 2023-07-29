@@ -3,19 +3,6 @@
 # Container networks
 set container network containers prefix '10.5.0.0/24'
 
-# cloudflare-ddns
-set container name cloudflare-ddns allow-host-networks
-set container name cloudflare-ddns environment CF_API_TOKEN value "${SECRET_CLOUDFLARE_DYNDNS_TOKEN}"
-set container name cloudflare-ddns environment DOMAINS value 'ipv4.jahanson.tech,ipv4.hsn.dev'
-set container name cloudflare-ddns environment IP6_PROVIDER value "none"
-set container name cloudflare-ddns environment TZ value 'America/Chicago'
-set container name cloudflare-ddns environment PGID value "1000"
-set container name cloudflare-ddns environment PUID value "1000"
-set container name cloudflare-ddns image 'docker.io/favonia/cloudflare-ddns:1.9.4'
-set container name cloudflare-ddns memory '0'
-set container name cloudflare-ddns restart 'on-failure'
-set container name cloudflare-ddns shared-memory '0'
-
 # bind
 set container name bind cap-add 'net-bind-service'
 set container name bind image 'docker.io/internetsystemsconsortium/bind9:9.19'
@@ -30,18 +17,6 @@ set container name bind volume config mode 'ro'
 set container name bind volume cache source '/tmp/bind/cache'
 set container name bind volume cache destination '/var/cache/bind'
 set container name bind volume cache mode 'rw'
-
-# dnsdist
-set container name dnsdist cap-add 'net-bind-service'
-set container name dnsdist environment TZ value 'America/Chicago'
-set container name dnsdist image 'docker.io/powerdns/dnsdist-17:1.7.4'
-set container name dnsdist memory '0'
-set container name dnsdist network containers address '10.5.0.4'
-set container name dnsdist restart 'on-failure'
-set container name dnsdist shared-memory '0'
-set container name dnsdist volume config source '/config/containers/dnsdist/config/dnsdist.conf'
-set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
-set container name dnsdist volume config mode 'ro'
 
 # haproxy-k8s-api
 set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.8.1'

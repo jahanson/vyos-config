@@ -5,6 +5,7 @@
 !.gitignore
 !.gitattributes
 !.sops.yaml
+!.envrc
 !apply-config.sh
 !secret.sops.env
 
