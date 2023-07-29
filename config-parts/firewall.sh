@@ -13,6 +13,8 @@ set firewall group address-group ios_devices address '10.1.2.34'
 set firewall group address-group ios_devices address '10.1.2.35'
 set firewall group address-group ios_devices address '10.1.2.36'
 
+set firewall group address-group esp address '10.1.3.21'
+
 set firewall group address-group k8s_api address '10.5.0.2'
 
 # external nginx
