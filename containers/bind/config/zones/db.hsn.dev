@@ -17,6 +17,9 @@ $ORIGIN hsn.dev.
 
 ; Containers
 onepassword-connect        IN  A 10.5.0.5
+aule                       IN  A 188.40.64.50
+manwe                      IN  A 136.243.88.216
+varda                      IN  A 136.243.8.106
 
 ; CNAME Records
 s3                         IN  CNAME nas.jahanson.tech.
