@@ -20,6 +20,9 @@ onepassword-connect        IN  A 10.5.0.5
 aule                       IN  A 188.40.64.50
 manwe                      IN  A 136.243.88.216
 varda                      IN  A 136.243.8.106
+nienna                     IN  A 49.13.12.216
+arlen                      IN  A 88.99.14.60
+eonwe                      IN  A 138.201.174.149
 
 ; CNAME Records
 s3                         IN  CNAME nas.jahanson.tech.
