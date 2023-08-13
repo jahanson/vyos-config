@@ -5,8 +5,8 @@
     "github>bjw-s/renovate-config:automerge-github-actions",
   ],
   "platform": "github",
-  "username": "jahanson-bot[bot]",
-  "gitAuthor": "jahanson-bot <132467671+jahanson-bot[bot]@users.noreply.github.com>",
+  "username": "smeagol-help[bot]",
+  "gitAuthor": "smeagol-help <132467671+smeagol-help[bot]@users.noreply.github.com>",
   "repositories": ["jahanson/vyos-config"],
   "regexManagers": [
     {
