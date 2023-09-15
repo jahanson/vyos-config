@@ -5,7 +5,7 @@
 $TTL 3600
 $ORIGIN hsn.dev.
 @ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
-  1691977675         ; serial number (epoch timestamp)
+  1692387676         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -23,6 +23,7 @@ varda                      IN  A 136.243.8.106
 nienna                     IN  A 116.202.49.124
 arlen                      IN  A 195.201.199.181
 eonwe                      IN  A 144.76.200.215
+git                        IN  A 40.124.184.64
 
 ; CNAME Records
 s3                         IN  CNAME nas.jahanson.tech.
