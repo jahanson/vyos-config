@@ -57,13 +57,13 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain ip-address '10.1.1.46'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain mac-address '98:90:96:B0:AD:EA'
 
-# Nextcloud
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud ip-address '10.1.1.51'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address '96:C6:B7:2A:5C:2A'
-
 # Raspberry Pis
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping frodo ip-address '10.1.1.52'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping frodo mac-address 'dc:a6:32:09:76:4c'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping frodo ip-address '10.1.1.51'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping frodo mac-address 'dc:a6:32:21:70:33'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping samwise ip-address '10.1.1.52'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping samwise mac-address 'dc:a6:32:36:6d:f3'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pippin ip-address '10.1.1.54'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pippin mac-address 'b8:27:eb:1b:a5:33'
 
 # VMs
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas ip-address '10.1.1.53'
