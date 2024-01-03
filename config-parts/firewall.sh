@@ -1,87 +1,20 @@
 #!/bin/vbash
 
 # General configuration
-set firewall state-policy established action 'accept'
-set firewall state-policy invalid action 'drop'
-set firewall state-policy related action 'accept'
+set firewall global-options state-policy established action 'accept'
+set firewall global-options state-policy related action 'accept'
+set firewall global-options all-ping 'enable'
 
 # Address Groups
-set firewall group address-group ios_devices address '10.1.2.31'
-set firewall group address-group ios_devices address '10.1.2.32'
-set firewall group address-group ios_devices address '10.1.2.33'
-set firewall group address-group ios_devices address '10.1.2.34'
-set firewall group address-group ios_devices address '10.1.2.35'
-set firewall group address-group ios_devices address '10.1.2.36'
-
-set firewall group address-group esp address '10.1.3.21'
-
+set firewall group address-group router-addresses address 10.0.0.1
+set firewall group address-group router-addresses address 127.0.0.1
+set firewall group address-group k8s_nodes address '10.1.1.61-63' # master nodes
+set firewall group address-group k8s_nodes address '10.1.1.41-46' # worker nodes
 set firewall group address-group k8s_api address '10.5.0.2'
-
-# external nginx
-set firewall group address-group k8s_ingress address '10.45.0.1'
-# internal nginx
-set firewall group address-group k8s_ingress address '10.45.0.3'
-
-set firewall group address-group k8s_ingress_allowed address '10.1.3.35'
-set firewall group address-group k8s_ingress_allowed address '10.1.3.36'
-
-set firewall group address-group k8s_mqtt address '10.45.0.10'
-
-set firewall group address-group k8s_nodes address '10.1.1.41'
-set firewall group address-group k8s_nodes address '10.1.1.42'
-set firewall group address-group k8s_nodes address '10.1.1.43'
-set firewall group address-group k8s_nodes address '10.1.1.44'
-set firewall group address-group k8s_nodes address '10.1.1.45'
-set firewall group address-group k8s_nodes address '10.1.1.46'
-set firewall group address-group k8s_nodes address '10.1.1.61'
-set firewall group address-group k8s_nodes address '10.1.1.62'
-set firewall group address-group k8s_nodes address '10.1.1.63'
-
-set firewall group address-group k8s_hass address '10.45.0.5'
-set firewall group address-group k8s_plex address '10.45.0.20'
+set firewall group address-group k8s_ingress address '10.45.0.1' # external nginx
+set firewall group address-group k8s_ingress address '10.45.0.3' # internal nginx
 set firewall group address-group k8s_vector_aggregator address '10.45.0.2'
-
-set firewall group address-group mqtt_clients address '10.1.2.21'
-set firewall group address-group mqtt_clients address '10.1.2.32'
-set firewall group address-group mqtt_clients address '10.1.3.18'
-set firewall group address-group mqtt_clients address '10.1.3.22'
-set firewall group address-group mqtt_clients address '10.1.3.56'
-set firewall group address-group mqtt_clients address '10.1.3.33' # SwitchBot Plug Mini 1
-set firewall group address-group mqtt_clients address '10.1.3.34' # SwitchBot Plug Mini 2
-set firewall group address-group mqtt_clients address '10.1.3.35' # SwitchBot Plug Mini 3
-set firewall group address-group mqtt_clients address '10.1.3.36' # SwitchBot Plug Mini 4
-
-set firewall group address-group hass_clients address '10.1.4.12'
-
-set firewall group address-group nas address '10.1.1.11'
-
-set firewall group address-group plex_clients address '10.1.2.21'
-set firewall group address-group plex_clients address '10.1.2.31'
-set firewall group address-group plex_clients address '10.1.2.32'
-set firewall group address-group plex_clients address '10.1.2.33'
-set firewall group address-group plex_clients address '10.1.2.34'
-set firewall group address-group plex_clients address '10.1.2.35'
-set firewall group address-group plex_clients address '10.1.2.36'
-set firewall group address-group plex_clients address '10.1.3.16'
-
-set firewall group address-group printers address '10.1.3.55'
-
-set firewall group address-group printer_allowed address '192.168.2.11'
-
-set firewall group address-group sonos_controllers address '10.1.2.21'
-set firewall group address-group sonos_controllers address '10.1.2.31'
-set firewall group address-group sonos_controllers address '10.1.2.32'
-set firewall group address-group sonos_controllers address '10.1.2.33'
-set firewall group address-group sonos_controllers address '10.1.2.34'
-set firewall group address-group sonos_controllers address '10.1.2.36'
-
-set firewall group address-group sonos_players address '10.1.3.71'
-set firewall group address-group sonos_players address '10.1.3.72'
-set firewall group address-group sonos_players address '10.1.3.73'
-set firewall group address-group sonos_players address '10.1.3.74'
-
-set firewall group address-group scanners address '10.1.3.55'
-
+set firewall group address-group nas address '10.1.1.11-12'
 set firewall group address-group unifi_devices address '10.1.0.11'
 set firewall group address-group unifi_devices address '10.1.0.12'
 set firewall group address-group unifi_devices address '10.1.0.13'
@@ -89,15 +22,10 @@ set firewall group address-group unifi_devices address '10.1.0.21'
 set firewall group address-group unifi_devices address '10.1.0.22'
 set firewall group address-group unifi_devices address '10.1.0.23'
 set firewall group address-group unifi_devices address '10.1.0.24'
-
-set firewall group address-group vector_journald_allowed address '10.1.3.56'
-set firewall group address-group vector_journald_allowed address '10.1.3.60'
-
-set firewall group address-group vyos_coredns address '10.5.0.3'
-
 set firewall group address-group vyos_unifi address '10.5.0.10'
-
 set firewall group network-group k8s_services network '10.45.0.0/16'
 
 # Port groups
 set firewall group port-group wireguard port '51820'
+set firewall group port-group sonos-discovery port '1900-1902'
+set firewall group port-group sonos-discovery port '57621'

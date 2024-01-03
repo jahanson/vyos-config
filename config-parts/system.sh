@@ -1,7 +1,7 @@
 #!/bin/vbash
 
 set system domain-name 'jahanson.tech'
-set system host-name 'gateway'
+set system host-name 'gandalf'
 
 set system ipv6 disable-forwarding
 
@@ -13,13 +13,6 @@ set system login user vyos authentication public-keys personal type 'ssh-ed25519
 set system name-server '1.1.1.1'
 
 set system sysctl parameter kernel.pty.max value '24000'
-
-# Sent to vector syslog server
-set system syslog global facility all level info
-set system syslog host 10.45.0.2 facility kern level 'warning'
-set system syslog host 10.45.0.2 protocol 'tcp'
-set system syslog host 10.45.0.2 port '6001'
-set system syslog host 10.45.0.2 format 'octet-counted'
 
 # Custom backup
 set system task-scheduler task backup-config crontab-spec '30 0 * * *'

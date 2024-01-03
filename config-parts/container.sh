@@ -3,21 +3,6 @@
 # Container networks
 set container network containers prefix '10.5.0.0/24'
 
-# bind
-set container name bind cap-add 'net-bind-service'
-set container name bind image 'docker.io/internetsystemsconsortium/bind9:9.19'
-set container name bind command '/usr/sbin/named -4 -f -c /etc/bind/named.conf -u bind'
-set container name bind memory '0'
-set container name bind network containers address '10.5.0.3'
-set container name bind restart 'on-failure'
-set container name bind shared-memory '0'
-set container name bind volume config source '/config/containers/bind/config'
-set container name bind volume config destination '/etc/bind'
-set container name bind volume config mode 'ro'
-set container name bind volume cache source '/tmp/bind/cache'
-set container name bind volume cache destination '/var/cache/bind'
-set container name bind volume cache mode 'rw'
-
 # haproxy-k8s-api
 set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.9.0'
 set container name haproxy-k8s-api memory '0'
@@ -57,7 +42,7 @@ set container name speedtest-exporter shared-memory '0'
 # udp-broadcast-relay-mdns
 set container name udp-broadcast-relay-mdns allow-host-networks
 set container name udp-broadcast-relay-mdns cap-add 'net-raw'
-set container name udp-broadcast-relay-mdns environment CFG_DEV value 'eth1.20;eth1.40'
+set container name udp-broadcast-relay-mdns environment CFG_DEV value 'eth4.20;eth4.40'
 set container name udp-broadcast-relay-mdns environment CFG_ID value '2'
 set container name udp-broadcast-relay-mdns environment CFG_MULTICAST value '224.0.0.251'
 set container name udp-broadcast-relay-mdns environment CFG_PORT value '5353'
@@ -70,7 +55,7 @@ set container name udp-broadcast-relay-mdns shared-memory '0'
 # udp-broadcast-relay-sonos
 set container name udp-broadcast-relay-sonos allow-host-networks
 set container name udp-broadcast-relay-sonos cap-add 'net-raw'
-set container name udp-broadcast-relay-sonos environment CFG_DEV value 'eth1.20;eth1.40'
+set container name udp-broadcast-relay-sonos environment CFG_DEV value 'eth4.20;eth4.40'
 set container name udp-broadcast-relay-sonos environment CFG_ID value '1'
 set container name udp-broadcast-relay-sonos environment CFG_MULTICAST value '239.255.255.250'
 set container name udp-broadcast-relay-sonos environment CFG_PORT value '1900'
