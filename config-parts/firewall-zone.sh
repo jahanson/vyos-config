@@ -67,7 +67,6 @@ set firewall zone trusted from containers firewall name 'containers-trusted'
 set firewall zone trusted from video firewall name 'video-trusted'
 set firewall zone trusted from wan firewall name 'wan-trusted'
 set firewall zone trusted interface 'eth4.20'
-set firewall zone trusted interface 'wg01'
 
 # video
 set firewall zone video default-action 'drop'
@@ -89,4 +88,4 @@ set firewall zone wan from servers firewall name 'servers-wan'
 set firewall zone wan from containers firewall name 'containers-wan'
 set firewall zone wan from trusted firewall name 'trusted-wan'
 set firewall zone wan from video firewall name 'video-wan'
-set firewall zone wan interface 'eth0'
+set firewall zone wan interface 'eth5'
