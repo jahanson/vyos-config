@@ -4,9 +4,6 @@
 # Track certain files and directories
 !.gitignore
 
-!/bind/
-!/dnsdist/
-!/haproxy/
-!/haproxy-k3s/
-!/unifi/
-!/vector-agent/
+!/config/
+/config/*
+!/config/haproxy.cfg

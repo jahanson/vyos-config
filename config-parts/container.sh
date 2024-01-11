@@ -13,6 +13,16 @@ set container name haproxy-k8s-api volume config source '/config/containers/hapr
 set container name haproxy-k8s-api volume config destination '/usr/local/etc/haproxy/haproxy.cfg'
 set container name haproxy-k8s-api volume config mode 'ro'
 
+# haproxy-k3s-api
+set container name haproxy-k3s-api image 'docker.io/library/haproxy:2.9.0'
+set container name haproxy-k3s-api memory '0'
+set container name haproxy-k3s-api network containers address '10.5.0.3'
+set container name haproxy-k3s-api restart 'on-failure'
+set container name haproxy-k3s-api shared-memory '0'
+set container name haproxy-k3s-api volume config source '/config/containers/haproxy-k3s/config/haproxy.cfg'
+set container name haproxy-k3s-api volume config destination '/usr/local/etc/haproxy/haproxy.cfg'
+set container name haproxy-k3s-api volume config mode 'ro'
+
 # node-exporter
 set container name node-exporter environment procfs value '/host/proc'
 set container name node-exporter environment rootfs value '/host/rootfs'
