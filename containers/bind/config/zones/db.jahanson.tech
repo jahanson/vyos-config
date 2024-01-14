@@ -5,7 +5,7 @@
 $TTL 3600
 $ORIGIN jahanson.tech.
 @ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
-  1686507728         ; serial number (epoch timestamp)
+  1705263395         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -21,31 +21,6 @@ gateway                    IN  A  10.1.0.1
 ; Servers
 elessar                    IN  A  10.1.1.11
 sting                      IN  A  10.1.1.12
-gandalf                    IN  A  10.1.1.31
-glamdring                  IN  A  10.1.1.32
-shadowfax                  IN  A  10.1.1.33
-nenya                      IN  A  10.1.1.41
-vilya                      IN  A  10.1.1.42
-narya                      IN  A  10.1.1.43
-nahar                      IN  A  10.1.1.44
-thror                      IN  A  10.1.1.45
-thrain                     IN  A  10.1.1.46
-nextcloud                  IN  A  10.1.1.51
-frodo                      IN  A  10.1.1.52
-tulkas                     IN  A  10.1.1.53
-galadriel                  IN  A  10.1.1.61
-elrond                     IN  A  10.1.1.62
-cirdan                     IN  A  10.1.1.63
-
-; IOT
-livingroom-vacuum          IN  A  10.1.3.18
-
-; Video
-driveway-camera            IN  A  10.1.4.12
-
-; Containers
-morgoth                  IN  A  10.5.0.2
 
 ; CNAME records
 nas                        IN  CNAME  elessar.jahanson.tech.
-pikvm                      IN  CNAME  frodo.jahanson.tech.
