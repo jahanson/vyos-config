@@ -12,7 +12,7 @@ set protocols bgp neighbor 10.1.1.43 address-family ipv4-unicast
 set protocols bgp neighbor 10.1.1.43 description 'gollum'
 set protocols bgp neighbor 10.1.1.43 remote-as '64512'
 set protocols bgp neighbor 10.1.1.44 address-family ipv4-unicast
-set protocols bgp neighbor 10.1.1.44 description 'thror'
+set protocols bgp neighbor 10.1.1.44 description 'narya'
 set protocols bgp neighbor 10.1.1.44 remote-as '64512'
 ## k8s masters
 set protocols bgp neighbor 10.1.1.61 address-family ipv4-unicast

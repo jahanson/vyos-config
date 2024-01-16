@@ -13,7 +13,7 @@ $ORIGIN jahanson.tech.
 )
 
 ; NS Records
-@                          IN  NS gateway.jahanson.tech.
+@                          IN  NS gandalf.jahanson.tech.
 
 ; LAN
 gateway                    IN  A  10.1.0.1
