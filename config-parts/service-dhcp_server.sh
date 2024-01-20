@@ -48,8 +48,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya mac-address '00:a0:98:1a:5e:ed'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya ip-address '10.1.1.42'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya mac-address 'c8:1f:66:10:4d:b9'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gollum ip-address '10.1.1.43'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gollum mac-address 'fc:aa:14:93:fb:b1'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya ip-address '10.1.1.44'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya mac-address '80:e8:2c:db:68:a2'
 
@@ -91,6 +89,8 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-iphone mac-address 'c2:d2:9a:62:ef:03'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping legiondary ip-address '10.1.2.21'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping legiondary mac-address '54:05:db:b1:95:ff'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gollum ip-address '10.1.2.101'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gollum mac-address 'fc:aa:14:93:fb:b1'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
