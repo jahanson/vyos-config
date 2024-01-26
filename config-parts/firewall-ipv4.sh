@@ -224,7 +224,7 @@ set firewall ipv4 name local-servers rule 200 action 'accept'
 set firewall ipv4 name local-servers rule 200 description 'Rule: accept_graylog_syslog'
 set firewall ipv4 name local-servers rule 200 destination group address-group 'graylog'
 set firewall ipv4 name local-servers rule 200 destination port '1514'
-set firewall ipv4 name local-servers rule 200 protocol 'tcp'
+set firewall ipv4 name local-servers rule 200 protocol 'udp'
 set firewall ipv4 name local-servers rule 999 action 'drop'
 set firewall ipv4 name local-servers rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-servers rule 999 state invalid
