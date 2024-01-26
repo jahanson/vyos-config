@@ -19,3 +19,9 @@ set system task-scheduler task backup-config crontab-spec '30 0 * * *'
 set system task-scheduler task backup-config executable path '/config/scripts/custom-config-backup.sh'
 
 set system time-zone 'America/Chicago'
+
+# Syslog to graylog
+set system syslog host 10.1.1.5 facility kern level 'warning'
+set system syslog host 10.1.1.5 protocol 'udp'
+set system syslog host 10.1.1.5 port '1514'
+set system syslog host 10.1.1.5 format 'octet-counted'
