@@ -52,7 +52,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 
 # k8s prod workers
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya ip-address '10.1.1.41'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya mac-address '00:a0:98:1a:5e:ed'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya mac-address 'c8:1f:66:10:4d:b9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya ip-address '10.1.1.42'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya mac-address 'c8:1f:66:10:51:d9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond ip-address '10.1.1.43'
