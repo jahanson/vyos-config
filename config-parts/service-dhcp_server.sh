@@ -38,14 +38,14 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 s
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 
 # Logging
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping graybeard ip-address '10.1.1.5'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping graybeard mac-address 'a0:42:3f:2f:a9:69'
 
 # NAS
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar mac-address '00:11:32:87:f6:1d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting ip-address '10.1.1.12'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting mac-address 'a8:a1:59:4a:d1:b3'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping graybeard ip-address '10.1.1.13'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping graybeard mac-address 'd4:5d:64:91:b2:42'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax ip-address '10.1.1.30'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:75'
