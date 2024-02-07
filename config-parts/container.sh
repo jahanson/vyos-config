@@ -57,7 +57,7 @@ set container name speedtest-exporter shared-memory '0'
 # udp-broadcast-relay-mdns
 set container name udp-broadcast-relay-mdns allow-host-networks
 set container name udp-broadcast-relay-mdns cap-add 'net-raw'
-set container name udp-broadcast-relay-mdns environment CFG_DEV value 'eth4.20;eth4.40'
+set container name udp-broadcast-relay-mdns environment CFG_DEV value 'eth2.20;eth2.40'
 set container name udp-broadcast-relay-mdns environment CFG_ID value '2'
 set container name udp-broadcast-relay-mdns environment CFG_MULTICAST value '224.0.0.251'
 set container name udp-broadcast-relay-mdns environment CFG_PORT value '5353'
@@ -70,7 +70,7 @@ set container name udp-broadcast-relay-mdns shared-memory '0'
 # udp-broadcast-relay-sonos
 set container name udp-broadcast-relay-sonos allow-host-networks
 set container name udp-broadcast-relay-sonos cap-add 'net-raw'
-set container name udp-broadcast-relay-sonos environment CFG_DEV value 'eth4.20;eth4.40'
+set container name udp-broadcast-relay-sonos environment CFG_DEV value 'eth2.20;eth2.40'
 set container name udp-broadcast-relay-sonos environment CFG_ID value '1'
 set container name udp-broadcast-relay-sonos environment CFG_MULTICAST value '239.255.255.250'
 set container name udp-broadcast-relay-sonos environment CFG_PORT value '1900'
