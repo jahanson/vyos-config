@@ -1,7 +1,7 @@
 #!/bin/vbash
 
 set system domain-name 'jahanson.tech'
-set system host-name 'gandalf'
+set system host-name 'treebeard'
 
 set system ipv6 disable-forwarding
 

@@ -4,8 +4,8 @@
 ; SOA Records
 $TTL 3600
 $ORIGIN jahanson.tech.
-@ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
-  1705263395         ; serial number (epoch timestamp)
+@ 3600 IN SOA treebeard.jahanson.tech. treebeard.jahanson.tech. (
+  1707405658         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -13,14 +13,15 @@ $ORIGIN jahanson.tech.
 )
 
 ; NS Records
-@                          IN  NS gandalf.jahanson.tech.
+@                          IN  NS treebeard.jahanson.tech.
 
 ; LAN
-gateway                    IN  A  10.1.0.1
+treebeard                  IN  A  10.1.0.1
 
 ; Servers
 elessar                    IN  A  10.1.1.11
 sting                      IN  A  10.1.1.12
+gandalf                    IN  A  10.1.1.13
 
 ; CNAME records
 nas                        IN  CNAME  elessar.jahanson.tech.

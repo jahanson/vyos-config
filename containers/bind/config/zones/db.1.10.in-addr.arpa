@@ -4,8 +4,8 @@
 ; SOA Records
 $TTL 3600
 $ORIGIN 1.10.in-addr.arpa.
-@ 3600 IN SOA gateway.jahanson.tech. gateway.jahanson.tech. (
-  1686691675         ; serial number (epoch timestamp)
+@ 3600 IN SOA treebeard.jahanson.tech. treebeard.jahanson.tech. (
+  1707405658         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -13,33 +13,34 @@ $ORIGIN 1.10.in-addr.arpa.
 )
 
 ; NS Records
-@                          IN  NS gateway.jahanson.tech.
+@                          IN  NS treebeard.jahanson.tech.
 
 ; Reset origin
 $ORIGIN in-addr.arpa.
 
 ; LAN
-1.0.1.10                   IN  PTR  gateway.jahanson.tech.
+1.0.1.10                   IN  PTR  treebeard.jahanson.tech.
 
 ; Servers
 11.1.1.10                  IN  PTR  elessar.jahanson.tech.
-21.1.1.10                  IN  PTR  sting.jahanson.tech.
-31.1.1.10                  IN  PTR  gandalf.jahanson.tech.
-32.1.1.10                  IN  PTR  glamdring.jahanson.tech.
-33.1.1.10                  IN  PTR  shadowfax.jahanson.tech.
+12.1.1.10                  IN  PTR  sting.jahanson.tech.
+13.1.1.10                  IN  PTR  gandalf.jahanson.tech.
+30.1.1.10                  IN  PTR  shadowfax.jahanson.tech.
 41.1.1.10                  IN  PTR  nenya.jahanson.tech.
 42.1.1.10                  IN  PTR  vilya.jahanson.tech.
-43.1.1.10                  IN  PTR  narya.jahanson.tech.
-44.1.1.10                  IN  PTR  nahar.jahanson.tech.
-51.1.1.10                  IN  PTR  nextcloud.jahanson.tech.
-52.1.1.10                  IN  PTR  frodo.jahanson.tech.
+43.1.1.10                  IN  PTR  nahar.jahanson.tech.
+44.1.1.10                  IN  PTR  narya.jahanson.tech.
+52.1.1.10                  IN  PTR  samwise.jahanson.tech.
+54.1.1.10                  IN  PTR  pippin.jahanson.tech.
 53.1.1.10                  IN  PTR  tulkas.jahanson.tech.
 61.1.1.10                  IN  PTR  galadriel.jahanson.tech.
 62.1.1.10                  IN  PTR  elrond.jahanson.tech.
 63.1.1.10                  IN  PTR  cirdan.jahanson.tech.
+81.1.1.10                  IN  PTR  frodo.jahanson.tech.
 
 ; IOT
 18.3.1.10                  IN  PTR  livingroom-vacuum.jahanson.tech.
 
 ; Video
 12.4.1.10                  IN  PTR  driveway-camera.jahanson.tech.
+13.4.1.10                  IN  PTR  sidehouse-camera.jahanson.tech.
