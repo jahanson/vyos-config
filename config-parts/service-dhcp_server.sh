@@ -72,6 +72,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 # VMs
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas ip-address '10.1.1.53'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas mac-address '26:82:2F:16:7A:36'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas ip-address '10.1.1.55'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas mac-address 'fa:1b:41:bc:d5:cf'
 
 
 # k8s prod masters
