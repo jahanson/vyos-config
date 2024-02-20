@@ -205,7 +205,7 @@ set firewall ipv4 name local-lan rule 999 state invalid
 set firewall ipv4 name local-lan rule 999 log
 
 # From LOCAL to SERVERS
-set firewall ipv4 name local-servers default-action 'drop'
+set firewall ipv4 name local-servers default-action 'accept'
 set firewall ipv4 name local-servers description 'From LOCAL to SERVERS'
 set firewall ipv4 name local-servers default-log
 set firewall ipv4 name local-servers rule 40 action 'accept'

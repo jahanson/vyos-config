@@ -37,6 +37,17 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-serv
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 
+## Servers VLAN - PXE boot
+set service dhcp-server global-parameters 'option system-arch code 93 = unsigned integer 16;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow bootp;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow booting;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'next-server 10.1.1.1;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if exists user-class and option user-class = &quot;iPXE&quot; {'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;metal-amd64&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '} else {'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;undionly.kpxe&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '}'
+
 # Logging
 
 # NAS
@@ -44,8 +55,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elessar mac-address '00:11:32:87:f6:1d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting ip-address '10.1.1.12'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting mac-address 'a8:a1:59:4a:d1:b3'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping graybeard ip-address '10.1.1.13'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping graybeard mac-address 'd4:5d:64:91:b2:42'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf ip-address '10.1.1.13'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf mac-address 'd4:5d:64:91:b2:42'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax ip-address '10.1.1.30'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:75'
@@ -72,8 +83,10 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 # VMs
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas ip-address '10.1.1.53'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas mac-address '26:82:2F:16:7A:36'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas ip-address '10.1.1.55'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas mac-address 'fa:1b:41:bc:d5:cf'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud ip-address '10.1.1.55'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address 'fa:1b:41:bc:d5:cf'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nixos ip-address '10.1.1.56'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nixos mac-address 'da:3e:b7:27:d8:77'
 
 
 # k8s prod masters
