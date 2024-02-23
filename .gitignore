@@ -15,4 +15,4 @@
 !containers/
 
 # CI
-!.github/
+!renovate.json5
