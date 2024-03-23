@@ -106,6 +106,10 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 lease '86
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 name-server '10.1.2.1'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 start '10.1.2.200'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 stop '10.1.2.254'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping elisia-caldigit ip-address '10.1.2.22'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping elisia-caldigit mac-address '64:4b:f0:4a:55:57'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping elisia-wifi ip-address '10.1.2.23'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping elisia-wifi mac-address 'd4:57:63:de:ac:49'
 
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-ipad ip-address '10.1.2.32'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-ipad mac-address '8A:0B:3A:F1:9F:91'
