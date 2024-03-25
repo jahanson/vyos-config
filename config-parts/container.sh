@@ -128,7 +128,7 @@ set container name onepassword-sync volume data mode 'rw'
 
 # vnstat
 set container name vnstat allow-host-networks
-set container name vnstat environment EXCLUDE_PATTERN value '^docker|^veth|^br-|^lxc'
+set container name vnstat environment EXCLUDE_PATTERN value '^docker|^veth|^br-|^lxc|^eth1|^eth0'
 set container name vnstat environment TZ value 'America/Chicago'
 set container name vnstat image 'ghcr.io/vergoh/vnstat:2.12'
 set container name vnstat memory '0'
