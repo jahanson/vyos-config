@@ -94,7 +94,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 ip-address '10.1.1.72'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 mac-address '52:54:00:e5:08:8d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 ip-address '10.1.1.73'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 mac-address '98:90:96:A2:04:B1'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 mac-address 'ae:4c:70:3f:79:e4'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
