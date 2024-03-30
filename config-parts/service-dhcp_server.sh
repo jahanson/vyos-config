@@ -43,7 +43,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-pa
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow booting;'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'next-server 10.1.1.1;'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if exists user-class and option user-class = &quot;iPXE&quot; {'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;metal-amd64&quot;;'
+# set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;metal-amd64&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;http://10.5.0.7/boot.ipxe&quot;;'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '} else {'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;undionly.kpxe&quot;;'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '}'
@@ -56,20 +57,10 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting ip-address '10.1.1.12'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping sting mac-address 'a8:a1:59:4a:d1:b3'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf ip-address '10.1.1.13'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf mac-address '90:e2:ba:dd:98:20'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf mac-address 'b4:96:91:20:2c:58'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax ip-address '10.1.1.30'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax mac-address '04:42:1a:ef:35:75'
-
-# k8s prod workers
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya ip-address '10.1.1.41'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nenya mac-address 'c8:1f:66:10:4d:b9'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya ip-address '10.1.1.42'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping vilya mac-address 'c8:1f:66:10:51:d9'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond ip-address '10.1.1.43'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping elrond mac-address 'BC:24:11:1D:24:93'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya ip-address '10.1.1.44'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping narya mac-address '80:e8:2c:db:68:a2'
 
 
 # Raspberry Pis
@@ -96,6 +87,14 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain mac-address '98:90:96:B0:AD:EA'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan ip-address '10.1.1.63'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan mac-address '98:90:96:A2:04:B1'
+
+# k8s prod workers
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping anduril ip-address '10.1.1.71'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping anduril mac-address 'd4:5d:64:91:b2:42'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 ip-address '10.1.1.72'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 mac-address '52:54:00:e5:08:8d'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 ip-address '10.1.1.73'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 mac-address '98:90:96:A2:04:B1'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
