@@ -10,6 +10,7 @@ set firewall group address-group router-addresses address 10.0.0.1
 set firewall group address-group router-addresses address 127.0.0.1
 set firewall group address-group k8s_nodes address '10.1.1.61-10.1.1.63' # master nodes
 set firewall group address-group k8s_nodes address '10.1.1.70-10.1.1.79' # worker nodes
+set firewall group address-group home_automation address '10.1.1.51-10.1.1.59' # home automation nodes hass/zwave/mqtt etc
 set firewall group address-group k8s_api address '10.5.0.2'
 set firewall group address-group k8s_ingress address '10.45.0.1' # external nginx
 set firewall group address-group k8s_ingress address '10.45.0.3' # internal nginx
