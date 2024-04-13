@@ -38,6 +38,11 @@ set firewall ipv4 name iot-local rule 200 description 'Rule: accept_discovery_fr
 set firewall ipv4 name iot-local rule 200 destination group port-group sonos-discovery
 set firewall ipv4 name iot-local rule 200 protocol 'udp'
 set firewall ipv4 name iot-local rule 200 source group address-group 'sonos_players'
+set firewall ipv4 name iot-local rule 220 action 'accept'
+set firewall ipv4 name iot-local rule 220 description 'Rule: accept_api_from_sonos_controllers'
+set firewall ipv4 name iot-local rule 220 destination group port-group sonos-controller-api
+set firewall ipv4 name iot-local rule 220 protocol 'tcp'
+set firewall ipv4 name iot-local rule 220 source group address-group 'sonos_controllers'
 set firewall ipv4 name iot-local rule 999 action 'drop'
 set firewall ipv4 name iot-local rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name iot-local rule 999 state invalid
@@ -74,6 +79,17 @@ set firewall ipv4 name iot-containers rule 999 log
 set firewall ipv4 name iot-trusted default-action 'drop'
 set firewall ipv4 name iot-trusted description 'From IOT to TRUSTED'
 set firewall ipv4 name iot-trusted default-log
+set firewall ipv4 name iot-trusted rule 100 description 'Rule: accept_udp_from_sonos_players_to_sonos_controllers'
+set firewall ipv4 name iot-trusted rule 100 destination group address-group 'sonos_controllers'
+set firewall ipv4 name iot-trusted rule 100 destination port '319,320,30000-65535'
+set firewall ipv4 name iot-trusted rule 100 protocol 'udp'
+set firewall ipv4 name iot-trusted rule 100 source group address-group 'sonos_players'
+set firewall ipv4 name iot-trusted rule 110 action 'accept'
+set firewall ipv4 name iot-trusted rule 110 description 'Rule: accept_tcp_from_sonos_players_to_sonos_controllers'
+set firewall ipv4 name iot-trusted rule 110 destination group address-group 'sonos_controllers'
+set firewall ipv4 name iot-trusted rule 110 destination port '1400,3400,3401,3500,30000-65535'
+set firewall ipv4 name iot-trusted rule 110 protocol 'tcp'
+set firewall ipv4 name iot-trusted rule 110 source group address-group 'sonos_players'
 set firewall ipv4 name iot-trusted rule 999 action 'drop'
 set firewall ipv4 name iot-trusted rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name iot-trusted rule 999 state invalid
@@ -190,6 +206,11 @@ set firewall ipv4 name local-iot rule 110 description 'Rule: accept_mdns'
 set firewall ipv4 name local-iot rule 110 destination port 'mdns'
 set firewall ipv4 name local-iot rule 110 protocol 'udp'
 set firewall ipv4 name local-iot rule 110 source port 'mdns'
+set firewall ipv4 name local-iot rule 200 action 'accept'
+set firewall ipv4 name local-iot rule 200 description 'Rule: accept_discovery_from_sonos_controllers'
+set firewall ipv4 name local-iot rule 200 destination group port-group sonos-controller-discovery
+set firewall ipv4 name local-iot rule 200 protocol 'udp'
+set firewall ipv4 name local-iot rule 200 source group address-group 'sonos_controllers'
 set firewall ipv4 name local-iot rule 999 action 'drop'
 set firewall ipv4 name local-iot rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-iot rule 999 state invalid
@@ -256,7 +277,7 @@ set firewall ipv4 name local-trusted rule 110 protocol 'udp'
 set firewall ipv4 name local-trusted rule 110 source port 'mdns'
 set firewall ipv4 name local-trusted rule 200 action 'accept'
 set firewall ipv4 name local-trusted rule 200 description 'Rule: accept_discovery_from_sonos_players'
-set firewall ipv4 name local-trusted rule 200 destination group port-group sonos-discovery
+set firewall ipv4 name local-trusted rule 200 destination group port-group sonos-player-discovery
 set firewall ipv4 name local-trusted rule 200 protocol 'udp'
 set firewall ipv4 name local-trusted rule 200 source group address-group 'sonos_players'
 set firewall ipv4 name local-trusted rule 400 action 'accept'
@@ -472,6 +493,16 @@ set firewall ipv4 name containers-wan description 'From CONTAINERS to WAN'
 # From TRUSTED to IOT
 set firewall ipv4 name trusted-iot default-action 'accept'
 set firewall ipv4 name trusted-iot description 'From TRUSTED to IOT'
+set firewall ipv4 name trusted-iot rule 110 action 'accept'
+set firewall ipv4 name trusted-iot rule 110 description 'Rule: accept_tcp_from_sonos_controllers_to_sonos_players'
+set firewall ipv4 name trusted-iot rule 110 destination port '1400,1443,4444,7000,30000-65535'
+set firewall ipv4 name trusted-iot rule 110 protocol 'tcp'
+set firewall ipv4 name trusted-iot rule 110 source group address-group 'sonos_controllers'
+set firewall ipv4 name trusted-iot rule 111 action 'accept'
+set firewall ipv4 name trusted-iot rule 111 description 'Rule: accept_udp_from_sonos_controllers_to_sonos_players'
+set firewall ipv4 name trusted-iot rule 111 destination port '319,320,30000-65535'
+set firewall ipv4 name trusted-iot rule 111 protocol 'udp'
+set firewall ipv4 name trusted-iot rule 111 source group address-group 'sonos_controllers'
 set firewall ipv4 name trusted-iot rule 999 action 'drop'
 set firewall ipv4 name trusted-iot rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name trusted-iot rule 999 state invalid
@@ -510,9 +541,14 @@ set firewall ipv4 name trusted-local rule 120 action 'accept'
 set firewall ipv4 name trusted-local rule 120 description 'Rule: accept_dns'
 set firewall ipv4 name trusted-local rule 120 destination port 'domain,domain-s'
 set firewall ipv4 name trusted-local rule 120 protocol 'tcp_udp'
+set firewall ipv4 name trusted-local rule 210 action 'accept'
+set firewall ipv4 name trusted-local rule 210 description 'Rule: accept_discovery_from_sonos_controllers'
+set firewall ipv4 name trusted-local rule 210 destination group port-group sonos-controller-discovery
+set firewall ipv4 name trusted-local rule 210 protocol 'udp'
+set firewall ipv4 name trusted-local rule 210 source group address-group 'sonos_controllers'
 set firewall ipv4 name trusted-local rule 211 action 'accept'
 set firewall ipv4 name trusted-local rule 211 description 'Rule: accept_discovery_from_sonos_players'
-set firewall ipv4 name trusted-local rule 211 destination group port-group sonos-discovery
+set firewall ipv4 name trusted-local rule 211 destination group port-group sonos-player-discovery
 set firewall ipv4 name trusted-local rule 211 protocol 'udp'
 set firewall ipv4 name trusted-local rule 211 source group address-group 'sonos_players'
 set firewall ipv4 name trusted-local rule 400 action 'accept'

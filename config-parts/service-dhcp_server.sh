@@ -142,14 +142,22 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 
 
 # Switchbot plugs
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-1 ip-address '10.1.3.33'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-1 ip-address '10.1.3.31'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-1 mac-address 'A0:76:4E:21:DE:D0'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-2 ip-address '10.1.3.34'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-2 ip-address '10.1.3.32'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-2 mac-address '34:85:18:0E:C7:CC'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-3 ip-address '10.1.3.35'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-3 ip-address '10.1.3.33'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-3 mac-address '68:B6:B3:B3:EF:6C'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-4 ip-address '10.1.3.36'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-4 ip-address '10.1.3.34'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-4 mac-address 'A0:76:4E:1F:D7:84'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-5 ip-address '10.1.3.35'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-5 mac-address '34:85:18:10:37:60'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-6 ip-address '10.1.3.36'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-6 mac-address 'A0:76:4E:35:81:38'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-7 ip-address '10.1.3.37'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-7 mac-address '68:b6:b3:b2:5a:30'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-8 ip-address '10.1.3.38'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-8 mac-address '68:B6:B3:B7:EF:24'
 
 # Sonos
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-sonos-beam ip-address '10.1.3.71'

@@ -13,6 +13,16 @@ set service ntp server time.cloudflare.com
 set service ssh disable-password-authentication
 set service ssh port '22'
 
+# UDP Broadcast-Relay
+set service broadcast-relay id 1 description 'Sonos'
+set service broadcast-relay id 1 interface 'eth1.20'
+set service broadcast-relay id 1 interface 'eth1.30'
+set service broadcast-relay id 1 port '1900'
+
+# mDNS Repeater
+set service mdns repeater interface 'eth1.20'
+set service mdns repeater interface 'eth1.30'
+
 # TFTP server
 set service tftp-server directory '/config/tftpboot'
 set service tftp-server listen-address 10.1.1.1
