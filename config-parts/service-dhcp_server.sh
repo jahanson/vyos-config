@@ -166,8 +166,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-2 mac-address '48:a6:b8:fa:62:0e'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-3 ip-address '10.1.3.73'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-3 mac-address '48:a6:b8:fa:64:a6'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-4 ip-address '10.1.3.74'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-4 mac-address '48:a6:b8:48:a8:e5'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-4-livingroom ip-address '10.1.3.74'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-4-livingroom mac-address '48:a6:b8:48:a8:e5'
 
 # Video VLAN
 set service dhcp-server shared-network-name VIDEO authoritative
