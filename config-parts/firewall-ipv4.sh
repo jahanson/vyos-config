@@ -79,6 +79,7 @@ set firewall ipv4 name iot-containers rule 999 log
 set firewall ipv4 name iot-trusted default-action 'drop'
 set firewall ipv4 name iot-trusted description 'From IOT to TRUSTED'
 set firewall ipv4 name iot-trusted default-log
+set firewall ipv4 name iot-trusted rule 100 action 'accept'
 set firewall ipv4 name iot-trusted rule 100 description 'Rule: accept_udp_from_sonos_players_to_sonos_controllers'
 set firewall ipv4 name iot-trusted rule 100 destination group address-group 'sonos_controllers'
 set firewall ipv4 name iot-trusted rule 100 destination port '319,320,30000-65535'
