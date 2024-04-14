@@ -113,7 +113,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-ipad ip-address '10.1.2.32'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-ipad mac-address '6E:26:9E:D7:57:00'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-iphone ip-address '10.1.2.31'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-iphone mac-address 'c2:d2:9a:62:ef:03'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping jahanson-iphone mac-address '8E:41:F9:95:09:0B'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping legiondary ip-address '10.1.2.21'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping legiondary mac-address '54:05:db:b1:95:ff'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gollum ip-address '10.1.2.101'
@@ -160,12 +160,12 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping switchbot-plug-mini-8 mac-address '68:B6:B3:B7:EF:24'
 
 # Sonos
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-sonos-beam ip-address '10.1.3.71'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-sonos-beam mac-address '54:2a:1b:8e:e0:3b'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-2 ip-address '10.1.3.72'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-2 mac-address '48:a6:b8:fa:62:0e'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-3 ip-address '10.1.3.73'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-3 mac-address '48:a6:b8:fa:64:a6'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-1-office ip-address '10.1.3.71'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-1-office mac-address '54:2a:1b:8e:e0:3b'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-2-one-left ip-address '10.1.3.72'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-2-one-left mac-address '48:a6:b8:fa:62:0e'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-3-one-right ip-address '10.1.3.73'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-3-one-right mac-address '48:a6:b8:fa:64:a6'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-4-livingroom ip-address '10.1.3.74'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping sonos-4-livingroom mac-address '48:a6:b8:48:a8:e5'
 
