@@ -20,8 +20,9 @@ set system task-scheduler task backup-config executable path '/config/scripts/cu
 
 set system time-zone 'America/Chicago'
 
-# Syslog to graylog
+# Syslog to vector
+set system syslog global facility all level info
 set system syslog host 10.45.0.4 facility kern level 'warning'
-set system syslog host 10.45.0.4 protocol 'udp'
-set system syslog host 10.45.0.4 port '1514'
+set system syslog host 10.45.0.4 protocol 'tcp'
+set system syslog host 10.45.0.4 port '6020'
 set system syslog host 10.45.0.4 format 'octet-counted'
