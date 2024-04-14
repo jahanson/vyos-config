@@ -25,7 +25,6 @@ set firewall group address-group unifi_devices address '10.1.0.23'
 set firewall group address-group unifi_devices address '10.1.0.24'
 set firewall group address-group vyos_unifi address '10.5.0.10'
 set firewall group network-group k8s_services network '10.45.0.0/16'
-set firewall group address-group sonos_players address '10.1.2.31'
 
 # Sonos controllers
 set firewall group port-group sonos-controller-api port '1400'
@@ -42,5 +41,3 @@ set firewall group address-group sonos_players address '10.1.3.71-10.1.3.75'
 
 # Port groups
 set firewall group port-group wireguard port '51820'
-set firewall group port-group sonos-discovery port '1900-1902'
-set firewall group port-group sonos-discovery port '57621'
