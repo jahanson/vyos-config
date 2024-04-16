@@ -174,7 +174,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 ## k8s IoT interfaces
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping gandalf ip-address '10.1.3.121'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping gandalf mac-address '52:54:00:e5:08:8d'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping gandalf mac-address '52:54:00:f2:ac:23'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping shadowfax ip-address '10.1.3.122'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping shadowfax mac-address 'ae:4c:70:3f:79:e4'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping anduril ip-address '10.1.3.123'
