@@ -2,18 +2,15 @@
 
 # BGP configuration
 ## k8s workers
-set protocols bgp neighbor 10.1.1.41 address-family ipv4-unicast
-set protocols bgp neighbor 10.1.1.41 description 'nenya'
-set protocols bgp neighbor 10.1.1.41 remote-as '64512'
-set protocols bgp neighbor 10.1.1.42 address-family ipv4-unicast
-set protocols bgp neighbor 10.1.1.42 description 'vilya'
-set protocols bgp neighbor 10.1.1.42 remote-as '64512'
-set protocols bgp neighbor 10.1.1.43 address-family ipv4-unicast
-set protocols bgp neighbor 10.1.1.43 description 'gollum'
-set protocols bgp neighbor 10.1.1.43 remote-as '64512'
-set protocols bgp neighbor 10.1.1.44 address-family ipv4-unicast
-set protocols bgp neighbor 10.1.1.44 description 'narya'
-set protocols bgp neighbor 10.1.1.44 remote-as '64512'
+set protocols bgp neighbor 10.1.1.71 address-family ipv4-unicast
+set protocols bgp neighbor 10.1.1.71 description 'anduril'
+set protocols bgp neighbor 10.1.1.71 remote-as '64512'
+set protocols bgp neighbor 10.1.1.72 address-family ipv4-unicast
+set protocols bgp neighbor 10.1.1.72 description 'gandalf'
+set protocols bgp neighbor 10.1.1.72 remote-as '64512'
+set protocols bgp neighbor 10.1.1.73 address-family ipv4-unicast
+set protocols bgp neighbor 10.1.1.73 description 'shadowfax'
+set protocols bgp neighbor 10.1.1.73 remote-as '64512'
 ## k8s masters
 set protocols bgp neighbor 10.1.1.61 address-family ipv4-unicast
 set protocols bgp neighbor 10.1.1.61 description 'galadriel'
