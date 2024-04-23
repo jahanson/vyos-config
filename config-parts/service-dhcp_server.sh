@@ -76,15 +76,18 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping tulkas mac-address '26:82:2F:16:7A:36'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud ip-address '10.1.1.55'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nextcloud mac-address 'fa:1b:41:bc:d5:cf'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nixos ip-address '10.1.1.56'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nixos mac-address 'da:3e:b7:27:d8:77'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping este ip-address '10.1.1.56'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping este mac-address 'da:3e:b7:27:d8:77'
 
+# Misc
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping telperion ip-address '10.1.1.57'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping telperion mac-address 'b8:ca:3a:af:fa:62'
 
 # k8s prod masters
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping galadriel ip-address '10.1.1.61'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping galadriel mac-address '34:17:EB:D9:AB:D2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain ip-address '10.1.1.62'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain mac-address '98:90:96:B0:AD:EA'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping thrain mac-address '98:90:96:e0:fa:f0'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan ip-address '10.1.1.63'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping cirdan mac-address '98:90:96:A2:04:B1'
 
@@ -92,7 +95,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping anduril ip-address '10.1.1.71'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping anduril mac-address 'd4:5d:64:91:b2:42'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 ip-address '10.1.1.72'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 mac-address '52:54:00:e5:08:8d'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gandalf-01 mac-address '52:54:00:d0:4f:67'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 ip-address '10.1.1.73'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping shadowfax-01 mac-address 'ae:4c:70:3f:79:e4'
 
@@ -174,7 +177,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 ## k8s IoT interfaces
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping gandalf ip-address '10.1.3.121'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping gandalf mac-address '52:54:00:f2:ac:23'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping gandalf mac-address '00:25:90:85:51:ca'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping shadowfax ip-address '10.1.3.122'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping shadowfax mac-address '0e:46:8d:59:24:ca'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping anduril ip-address '10.1.3.123'
